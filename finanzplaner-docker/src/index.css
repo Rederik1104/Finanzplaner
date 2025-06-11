@@ -1,0 +1,20 @@
+header {
+  background-color: #1e2a3a; /* Beispiel-Hintergrund */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem; /* Links und rechts 2rem Abstand */
+  height: 100px;
+  background-color: #1e2a3a;
+  color: white;
+}
+
+.login-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}

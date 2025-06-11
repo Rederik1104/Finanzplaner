@@ -1,25 +1,23 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-require __DIR__ . '/database.php';
-
-// Example logic to handle a request
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    // Fetch users from the database
-    echo "Verbunden mit DB: " . htmlspecialchars($db_config['database']) . "<br>";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Finanzplaner</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <span class="title">Finanzplaner</span>
+            <button class="login-btn">Login</button>
+        </div>
+    </header>
     
-    $query = $pdo->query("SELECT * FROM users");
-    $users = $query->fetchAll(PDO::FETCH_ASSOC);
+    
+    
 
-    echo "Anzahl Benutzer: " . count($users) . "<br>";
-
-    // Display users
-    foreach ($users as $user) {
-        echo "Username: " . htmlspecialchars($user['username']) . "<br>";
-        echo "Email: " . htmlspecialchars($user['created_at']) . "<br><br>";
-    }
-} else {
-    echo "Unsupported request method.";
-}
-?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
