@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #fff7ed 0%, #fcdcbf 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #2c3e50;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 450px;
+  padding: 1.5rem;
+}
+
+.login-box {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgb(252 220 191 / 0.4);
+  box-sizing: border-box;
+}
+
+.login-title {
+  margin: 0 0 1.8rem 0;
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #f97316;
+}
+
+.form-group {
+  margin-bottom: 1.4rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #d1d8e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.25s ease;
+  font-family: inherit;
+  color: #2d2d2d;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #f97316;
+  outline: none;
+  box-shadow: 0 0 8px #f9731688;
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  min-height: 1.2rem;
+  display: block;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #f97316;
+  border: none;
+  padding: 0.85rem 0;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgb(249 115 22 / 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #d45e11;
+  outline: none;
+}
+
+.forgot-password,
+.register {
+  margin-top: 1.3rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.forgot-password a,
+.register a {
+  color: #f97316;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forgot-password a:hover,
+.forgot-password a:focus,
+.register a:hover,
+.register a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+.back {
+  background: none;
+  border: none;
+  width: 10px;
+  height: 10px;
+}
