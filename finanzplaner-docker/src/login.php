@@ -13,7 +13,7 @@ require __DIR__ . '/database.php';
   <div class="login-wrapper">
         <div class="login-box">
             <h2 class="login-title">Login</h2>
-            <form action="register_process.php" method="post">
+            <form method="post">
                 <input type="text" name="username" placeholder="Benutzername" required>
                 <span class="error-message"></span>
 
