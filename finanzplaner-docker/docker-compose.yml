@@ -7,6 +7,13 @@ services:
       - ./src:/var/www/html
     ports:
       - "8088:80"
+    # Ergänze folgende Zeile:
+    environment:
+      - APACHE_RUN_USER=www-data
+    # Füge ein build hinzu:
+    build:
+      context: .
+      dockerfile: Dockerfile
 
   db:
     image: mysql:8.0
@@ -14,7 +21,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: projekt_db
-      MYSQL_USER: user
+      MYSQL_USER: user 
       MYSQL_PASSWORD: pass
     volumes:
       - db_data:/var/lib/mysql
